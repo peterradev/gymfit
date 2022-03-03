@@ -1,8 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 * {
   box-sizing: border-box;
   margin: 0;
-  padding: 0 1rem;
+  padding: 0;
   align-items: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+.gradient_bg{
+  background:-moz-radial-gradient(circle at 3% 25%, rgb(62, 108, 156) 0%, rgb(21, 231, 66) 25%);
+/* global 92%+ browsers support */
+background:radial-gradient(circle at 3% 25%, rgba(62, 108, 156, 1) 0%, rgba(14, 21, 46, 1) 25%);
 }
 
 body {

@@ -1,13 +1,18 @@
+
+
+
 nav {
   display: flex;
   flex-direction: row;
   /* background-color: blueviolet; */
   justify-content: space-between;
-  /* padding: 0 2rem; */
+  padding: 2rem 6rem;
   align-items: center;
 }
 
-nav h1 {
+.logo{
+  font-weight: 700;
+  font-size: 2rem;
 }
 
 nav ul {
@@ -19,10 +24,10 @@ nav ul {
 }
 
 nav ul a {
+  font-weight: bold;
   padding: 1.4rem;
   color: #fff;
   list-style: none;
   text-decoration: none;
   font-size: 1.35rem;
-  /* margin: 40px;   */
 }

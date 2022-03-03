@@ -50,7 +50,7 @@ function LogIn({ setIsAuth}) {
 
   const logout = async() => {
     await signOut(auth);
-    localStorage.setItem('isAuth', false);
+    localStorage.clear();
     setIsAuth(false);
   }
 
@@ -78,10 +78,10 @@ function LogIn({ setIsAuth}) {
         {/* {console.log(auth.currentUser.email)} */}
         <button onClick={logout}>Logout</button>
       </form>
-      <form action="">
-        <input type="email" onChange={(e) => setLoginEmail(e.target.value)} name=''  placeholder='email' />
-        <input type="password" onChange={(event) => setLoginPassword(event.target.value)} name=""  placeholder='password' />
-        <button type='submit' onClick={login}>Login</button>
+      <form action="" onSubmit={login}>
+        <input type="email" onChange={(e) => setLoginEmail(e.target.value)} name=''  placeholder='email' required/>
+        <input type="password" onChange={(event) => setLoginPassword(event.target.value)} name=""  placeholder='password' required/>
+        <button type='submit' >Login</button>
       </form>
     </div>
   )

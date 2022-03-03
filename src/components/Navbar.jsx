@@ -5,11 +5,18 @@ import './navbar.css';
 const Navbar = ({isAuth}) => {
   return (
      <nav>
-       <h1>Co Name.</h1>
+       <h1 className='logo'>GymTrack</h1>
        <ul>
          <Link to='/'>Home</Link>
+         <Link to='/'>Track</Link>
+         <Link to='/'> Exercises </Link>
+         
+         
+       </ul>
+       <ul>
          {!isAuth && <Link to='/login'>LogIn</Link>}
-         {isAuth && <Link to='login'>LogOut</Link>}
+         {isAuth && <Link to='/login'>LogOut</Link>}
+         {!isAuth && <Link to='/login'>Sign Up</Link>}
        </ul>
      </nav>
   )
